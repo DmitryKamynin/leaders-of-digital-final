@@ -1,10 +1,13 @@
+import { useState } from "preact/compat";
+
 import Styled, { StyledStartContainer } from "./styled";
 
 import Header from "../../widgets/Header";
 import LargeCard from "./widgets/LargeCard";
 import NormalCard from "./widgets/NormalCard";
 import BankOfferCard from "./widgets/BankOfferCard";
-import { useState } from "preact/compat";
+import OfferList from "./widgets/OfferList";
+import Banner from "@/modules/Main/modules/Home/Views/widgets/Banner";
 
 const Home = (): JSX.Element => {
   const [hovered, setHovered] = useState(5);
@@ -72,8 +75,32 @@ const Home = (): JSX.Element => {
             />
           </div>
         </div>
+
         <div className="container">
           <h1 className="title">Предложения для вас</h1>
+          <div className="content">
+            <OfferList />
+            <div className="bannerContainer">
+              <Banner
+                img="https://www.vtb.ru/-/media/headlesscms/main/suggest-your/1/security_1920.png
+"
+                title="Правила финансовой безопасности"
+                subtitle="Обращаем ваше внимание на несколько простых правил работы с интернет-банком и мобильным приложением"
+              />
+              <Banner
+                img="https://www.vtb.ru/-/media/headlesscms/main/suggest-your/1/clock_1920-1024.png"
+                title="Кредитные каникулы"
+                subtitle="Для тех, кто попал в сложную жизненную ситуацию"
+                small
+              />
+              <Banner
+                img="https://www.vtb.ru/-/media/headlesscms/main/suggest-your/1/heart_1920-1024.png"
+                title="Детские пособия с картой ВТБ «Мир»"
+                subtitle="Получайте социальные выплаты и другие преимущества с картой ВТБ «Мир»"
+                small
+              />
+            </div>
+          </div>
         </div>
       </Styled>
     </>

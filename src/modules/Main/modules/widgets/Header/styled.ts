@@ -4,6 +4,7 @@ const Styled = styled.header<{ transparent: boolean }>`
   display: flex;
   padding-left: 10px;
   position: fixed;
+  z-index: 10;
   top: 0;
   transition: 0.25s;
   background: ${({ transparent }): string =>

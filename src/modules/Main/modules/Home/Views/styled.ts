@@ -36,7 +36,12 @@ const Styled = styled.div`
 
     .content {
       display: flex;
-      flex-wrap: wrap;
+
+      .bannerContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 70px;
+      }
     }
   }
 `;
