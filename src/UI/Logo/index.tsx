@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { route } from "preact-router";
 
 const Stlyed = styled.div`
+  cursor: pointer;
   svg {
     @media screen and (max-width: 800px) {
       width: 60px;
@@ -9,7 +11,11 @@ const Stlyed = styled.div`
 `;
 
 const Logo = ({ colored }: { colored: boolean }): JSX.Element => (
-  <Stlyed>
+  <Stlyed
+    onClick={(): void => {
+      route("/main");
+    }}
+  >
     <svg
       className="header-logo icon"
       focusable="false"

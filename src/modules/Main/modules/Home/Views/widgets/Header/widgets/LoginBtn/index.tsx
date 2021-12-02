@@ -4,7 +4,7 @@ import IconSvg from "./widgets/IconSvg";
 
 const Logo = ({ colored }: { colored: boolean }): JSX.Element => (
   <Styled colored={colored}>
-    <Link className="link" href="/main">
+    <Link className="link" href="/main/private">
       <IconSvg colored={colored} />
       ВТБ ОНЛАЙН
     </Link>

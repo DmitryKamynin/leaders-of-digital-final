@@ -1,10 +1,10 @@
 import Styled from "./styled";
 
-import Logo from "./widgets/Logo";
+import Logo from "@/UI/Logo";
 import LoginBtn from "./widgets/LoginBtn";
 import Arrow from "./widgets/Arrow";
 
-import { useEffect, useRef, useState } from "preact/compat";
+import { useEffect, useState } from "preact/compat";
 
 const Header = ({
   needTransparent,

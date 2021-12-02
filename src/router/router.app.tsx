@@ -5,8 +5,8 @@ import Router from "preact-router";
 import AsyncRoute from "preact-async-route";
 import { createHashHistory } from "history";
 
-import FirstScenarioRouter from "@/modules/Mobile/Views";
-import Main from "@/modules/Main/Views";
+import MobileRouter from "@/modules/Mobile/Views";
+import MainRouter from "@/modules/Main/Views";
 
 const RouterApp = (): JSX.Element => (
   <Router history={createHashHistory()}>
@@ -17,8 +17,8 @@ const RouterApp = (): JSX.Element => (
       }
     />
 
-    <FirstScenarioRouter path="/mobile/:rest*" />
-    <Main path="/main/:rest*" />
+    <MobileRouter path="/mobile/:rest*" />
+    <MainRouter path="/main/:rest*" />
   </Router>
 );
 

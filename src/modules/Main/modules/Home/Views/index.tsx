@@ -2,12 +2,12 @@ import { useState } from "preact/compat";
 
 import Styled, { StyledStartContainer } from "./styled";
 
-import Header from "../../widgets/Header";
+import Header from "./widgets/Header";
 import LargeCard from "./widgets/LargeCard";
 import NormalCard from "./widgets/NormalCard";
 import BankOfferCard from "./widgets/BankOfferCard";
 import OfferList from "./widgets/OfferList";
-import Banner from "@/modules/Main/modules/Home/Views/widgets/Banner";
+import Banner from "./widgets/Banner";
 
 const Home = (): JSX.Element => {
   const [hovered, setHovered] = useState(5);
