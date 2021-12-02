@@ -5,7 +5,6 @@ const Promo = ({ promoTitle }: { promoTitle: string }): JSX.Element => {
     <Styled>
       <div className="promoTitle">{promoTitle}</div>
       <div className="promoContent">
-        {}
         <div className="previewContainer">
           <div className="preview color1" />
           <div className="previewTitle">Big Love Show</div>
