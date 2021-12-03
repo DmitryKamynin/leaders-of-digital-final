@@ -25,7 +25,7 @@ export const FifthBlock = styled.div`
     margin-bottom: 42px;
 
     @media screen and (max-width: 800px) {
-      font-size: 26px;
+      font-size: 18px;
       line-height: 25px;
     }
   }
@@ -35,7 +35,7 @@ export const FifthBlock = styled.div`
     line-height: 42px;
     margin-bottom: 12px;
     @media screen and (max-width: 800px) {
-      font-size: 26px;
+      font-size: 16px;
       line-height: 25px;
       margin-bottom: 30px;
     }
@@ -48,14 +48,15 @@ export const FifthBlock = styled.div`
       font-size: 24px;
       line-height: 28px;
       @media screen and (max-width: 800px) {
-        font-size: 20px;
-        line-height: 25px;
-        margin-bottom: 10px;
+        font-size: 16px;
+        max-width: 90%;
+        line-height: 20px;
+        margin-bottom: 20px;
       }
       span {
         @media screen and (max-width: 800px) {
-          font-size: 26px;
-          line-height: 25px;
+          font-size: 18px;
+          line-height: 20px;
         }
         font-size: 64px;
         line-height: 75px;
@@ -90,7 +91,7 @@ export const FourthBlock = styled.div`
     margin-bottom: 42px;
     @media screen and (max-width: 800px) {
       font-size: 16px;
-      line-height: 25px;
+      line-height: 20px;
       text-align: center;
     }
     span {
@@ -112,7 +113,8 @@ export const FourthBlock = styled.div`
       font-size: 16px;
       border-right: none;
       border-left: none;
-      line-height: 25px;
+      line-height: 20px;
+      padding: 10px;
     }
   }
 `;
@@ -124,7 +126,6 @@ export const ThirdBlock = styled.div`
   color: #fff;
   height: 100%;
   display: flex;
-  align-items: center;
 
   @media screen and (max-width: 800px) {
     padding: 0 8px;
@@ -140,7 +141,10 @@ export const ThirdBlock = styled.div`
     font-weight: 700;
     margin: 105px 0;
     @media screen and (max-width: 800px) {
-      margin: 20px 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      height: 52%;
       font-size: 16px;
       line-height: 25px;
       max-width: 306px;
@@ -155,9 +159,9 @@ export const ThirdBlock = styled.div`
     line-height: 28px;
 
     @media screen and (max-width: 800px) {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
-      line-height: 25px;
+      line-height: 15px;
       max-width: 170px;
       width: 100%;
     }
@@ -240,8 +244,9 @@ const Styled = styled.div`
       }
     }
     @media screen and (max-width: 800px) {
+      margin-bottom: 18px;
       font-size: 16px;
-      line-height: 25px;
+      line-height: 20px;
       max-width: 200px;
     }
   }
@@ -256,7 +261,7 @@ const Styled = styled.div`
 
     @media screen and (max-width: 800px) {
       font-size: 14px;
-      line-height: 25px;
+      line-height: 20px;
       max-width: 140px;
       margin-bottom: 0;
     }
