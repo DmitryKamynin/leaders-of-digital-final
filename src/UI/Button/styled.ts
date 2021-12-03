@@ -7,8 +7,12 @@ const StyledButton = styled.button<{ variant?: "blue" }>`
   padding: 27px 40px;
   border-radius: 8px;
   color: ${({ variant }): string => (variant ? "#fff" : "#000")};
-  background: ${({ variant }): string =>
-    variant ? "linear-gradient(90deg, #0037ff 0%, #0085ff 75%)" : "revert"};
+  background: ${({ variant, disabled }): string =>
+    disabled
+      ? "#868686"
+      : variant
+      ? "linear-gradient(90deg, #0037ff 0%, #0085ff 75%)"
+      : "revert"};
   transition: 0.25s;
 
   :hover {

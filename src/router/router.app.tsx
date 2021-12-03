@@ -7,6 +7,7 @@ import { createHashHistory } from "history";
 
 import MobileRouter from "@/modules/Mobile/Views";
 import MainRouter from "@/modules/Main/Views";
+import SocialRouter from "@/modules/Social/Views";
 
 const RouterApp = (): JSX.Element => (
   <Router history={createHashHistory()}>
@@ -19,6 +20,7 @@ const RouterApp = (): JSX.Element => (
 
     <MobileRouter path="/mobile/:rest*" />
     <MainRouter path="/main/:rest*" />
+    <SocialRouter path="/social/:rest*" />
   </Router>
 );
 
