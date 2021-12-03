@@ -146,6 +146,8 @@ export const ThirdBlock = styled.div`
 
     @media screen and (max-width: 800px) {
       font-size: 16px;
+      height: 55%;
+
       line-height: 25px;
       max-width: 306px;
       width: 100%;
