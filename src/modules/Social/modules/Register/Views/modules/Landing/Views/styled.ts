@@ -134,17 +134,17 @@ export const ThirdBlock = styled.div`
   }
 
   .title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 65%;
     max-width: 634px;
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 105px 0;
+
     @media screen and (max-width: 800px) {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      height: 52%;
       font-size: 16px;
       line-height: 25px;
       max-width: 306px;
@@ -157,7 +157,6 @@ export const ThirdBlock = styled.div`
     color: #012883;
     font-size: 24px;
     line-height: 28px;
-
     @media screen and (max-width: 800px) {
       font-size: 13px;
       font-weight: 600;
