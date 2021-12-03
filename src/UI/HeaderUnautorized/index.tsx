@@ -44,7 +44,6 @@ const Header = ({
           <div className="clients">Малый и средний бизнес</div>
           <div className="clients">Крупный бизнес</div>
           <Arrow colored={tran} />
-          <div className="uslugiMobile">Платежи и переводы</div>
           <LoginBtn colored={tran} />
         </div>
         <div className="flex">
