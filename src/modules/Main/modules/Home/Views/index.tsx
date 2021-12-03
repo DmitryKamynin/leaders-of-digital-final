@@ -2,19 +2,22 @@ import { useState } from "preact/compat";
 
 import Styled, { StyledStartContainer } from "./styled";
 
-import Header from "./widgets/Header";
+import smallBanner1 from "./Assets/smallBanner1.png";
+
+import Header from "@/UI/HeaderUnautorized";
 import LargeCard from "./widgets/LargeCard";
 import NormalCard from "./widgets/NormalCard";
 import BankOfferCard from "./widgets/BankOfferCard";
 import OfferList from "./widgets/OfferList";
 import Banner from "./widgets/Banner";
+import { route } from "preact-router";
 
 const Home = (): JSX.Element => {
   const [hovered, setHovered] = useState(5);
   const set = (id: number): void => setHovered(id);
   return (
     <>
-      <Header />
+      <Header needTransparent />
       <StyledStartContainer>
         <div className="slider">
           <LargeCard />
@@ -82,13 +85,15 @@ const Home = (): JSX.Element => {
             <OfferList />
             <div className="bannerContainer">
               <Banner
-                img="https://www.vtb.ru/-/media/headlesscms/main/suggest-your/1/security_1920.png
-"
-                title="Правила финансовой безопасности"
-                subtitle="Обращаем ваше внимание на несколько простых правил работы с интернет-банком и мобильным приложением"
+                img={smallBanner1}
+                title="Государственные выплаты без бумаг и МФЦ"
+                subtitle='Регистрируйтесь на сервисе "Социального казначейства" и получайте льготы на единый социальный счет банка "ВТБ" с дополнительными привилегиями'
+                buttonOnClick={(): void => {
+                  route("/social", true);
+                }}
               />
               <Banner
-                img="https://www.vtb.ru/-/media/headlesscms/main/suggest-your/1/clock_1920-1024.png"
+                img="https://www.vtb.ru/-/media/headlesscms/main/suggest-your/1/security_1920.png"
                 title="Кредитные каникулы"
                 subtitle="Для тех, кто попал в сложную жизненную ситуацию"
                 small

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Styled = styled.div`
-  margin-bottom: 47px;
+  padding-bottom: 47px;
 
   .container {
     display: flex;

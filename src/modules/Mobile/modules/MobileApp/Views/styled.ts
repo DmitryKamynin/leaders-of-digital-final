@@ -35,6 +35,17 @@ const Styled = styled.div<{ chatOpen: boolean }>`
       border-radius: 4px;
       background: #4182e4;
     }
+    .bannerContainer {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      max-width: 302px;
+      min-height: 125px;
+      img {
+        width: 100%;
+      }
+    }
 
     .item {
     }

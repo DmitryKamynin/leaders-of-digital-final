@@ -2,7 +2,7 @@ import { route } from "preact-router";
 
 import Styled from "./styled";
 
-import Header from "../../widgets/Header";
+import Header from "@/UI/Header";
 import Button from "@/UI/Button";
 import { useState } from "preact/compat";
 import Checkbox from "@/UI/Checkbox";
@@ -40,7 +40,7 @@ const PrivateOffice = (): JSX.Element => {
           <Button
             disabled={!checked}
             callback={(): void => {
-              route("/social/private/thanks");
+              route("/social/private/thanks", true);
             }}
             variant="blue"
           >

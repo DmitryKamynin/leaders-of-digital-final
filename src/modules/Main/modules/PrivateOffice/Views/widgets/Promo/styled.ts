@@ -11,8 +11,16 @@ const Styled = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media screen and (max-width: 800px) {
+      overflow-y: auto;
+      padding-bottom: 20px;
+    }
     .previewContainer {
       flex: 1 1 auto;
+
+      @media screen and (max-width: 800px) {
+        flex-shrink: 0;
+      }
       .preview {
         &.color1 {
           background-color: beige;
@@ -27,6 +35,10 @@ const Styled = styled.div`
         height: 162px;
         width: 100%;
         border-radius: 20px;
+        @media screen and (max-width: 800px) {
+          min-width: 250px;
+          margin-right: 15px;
+        }
       }
 
       .previewTitle {

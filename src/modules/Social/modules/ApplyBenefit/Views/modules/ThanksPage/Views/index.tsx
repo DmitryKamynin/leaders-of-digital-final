@@ -2,13 +2,13 @@ import { route } from "preact-router";
 
 import Styled from "./styled";
 
-import Header from "../../widgets/Header";
+import Header from "@/UI/Header";
 import Button from "@/UI/Button";
 
 const PrivateOffice = (): JSX.Element => {
   return (
     <Styled>
-      <Header needBackground />
+      <Header />
       <div className="wrapper">
         <h1 className="title">
           Теперь вы получаете выплаты на социальный счет банка “ВТБ”.
@@ -17,7 +17,7 @@ const PrivateOffice = (): JSX.Element => {
         <Button
           className="margin"
           callback={(): void => {
-            route("/");
+            route("/", true);
           }}
         >
           Главная

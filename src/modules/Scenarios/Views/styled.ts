@@ -34,11 +34,11 @@ const Styled = styled.div`
       .scenarioCard {
         max-width: 300px;
         width: 100%;
-
+        border: none;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        margin-bottom: 10px;
         background: linear-gradient(90deg, #0037ff 0%, #0085ff 75%);
         color: #fff;
         padding: 0 20px;

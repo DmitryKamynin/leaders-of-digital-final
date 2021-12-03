@@ -36,7 +36,7 @@ const Container: OverLoadContainer = ({ variant, title, children }) => {
     if (ref.current) {
       setHeight(ref.current.scrollHeight);
     }
-  }, [ref]);
+  }, [ref, children]);
 
   return (
     <Styled

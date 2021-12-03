@@ -11,8 +11,12 @@ import Fund from "./widgets/Fund";
 import ActionBar from "./widgets/ActionBar";
 import Chat from "./widgets/Chat";
 
+import Banner from "./Assets/banner.png";
+import Banner1 from "./Assets/banner1.png";
+
 import Store from "../ViewModel";
 import { useEffect } from "preact/compat";
+import { route } from "preact-router";
 
 const MobileApp = observer((): JSX.Element => {
   useEffect(() => {
@@ -25,7 +29,17 @@ const MobileApp = observer((): JSX.Element => {
       <div className="mobileTemplate">
         <Header />
         <SearchBar />
-        <Container variant="close">Баннер</Container>
+        <Container variant="close">
+          <button
+            type="button"
+            onClick={(): void => {
+              route("/social/");
+            }}
+            className="bannerContainer"
+          >
+            <img src={Banner} alt="" />
+          </button>
+        </Container>
         <Container variant="collapse" title="Доступные средства">
           <Fund variant="total" />
           <Fund variant="bonus" />
@@ -47,7 +61,17 @@ const MobileApp = observer((): JSX.Element => {
             cardLastNumber={9019}
             sum="500 €"
           />
-          <div>Баннер</div>
+          <div>
+            <button
+              type="button"
+              onClick={(): void => {
+                route("/social/");
+              }}
+              className="bannerContainer"
+            >
+              <img src={Banner1} alt="" />
+            </button>
+          </div>
         </Container>
         <ActionBar />
 

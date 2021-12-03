@@ -85,7 +85,13 @@ const Styled = styled.div<{ chatOpen: boolean }>`
           flex-grow: 1;
           width: 100%;
 
-          a {
+          button {
+            cursor: pointer;
+            background: none;
+            border: none;
+            :focus {
+              outline: none;
+            }
             color: #4182e4;
           }
         }
@@ -119,10 +125,26 @@ const Styled = styled.div<{ chatOpen: boolean }>`
     justify-content: flex-end;
 
     position: relative;
-
+    form {
+      width: 100%;
+    }
     .variantsContainer {
       display: flex;
-      width: 200%;
+      white-space: nowrap;
+      overflow-y: auto;
+      padding-bottom: 6px;
+      ::-webkit-scrollbar {
+        height: 1px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background: #4182e4;
+      }
 
       .variant {
         cursor: pointer;
@@ -148,6 +170,7 @@ const Styled = styled.div<{ chatOpen: boolean }>`
     }
 
     input {
+      width: 100%;
       margin-top: 20px;
       background: #1d2228;
       border: 1px solid #4c4d4f;

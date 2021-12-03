@@ -1,17 +1,24 @@
 import styled from "styled-components";
 
 const Styled = styled.div`
-  height: 100%;
-  overflow: hidden;
   background: #f1f2f4;
+
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+  }
 
   .wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 20px 180px;
+    margin: 20px 120px;
+
+    @media screen and (max-width: 800px) {
+      margin: 20px 8px;
+      flex-direction: column;
+    }
 
     .leftContainer {
-      flex: 0.1 1 auto;
+      flex: 0.28 1 0;
     }
 
     .container {
@@ -39,7 +46,7 @@ const Styled = styled.div`
       }
 
       &.rightContainer {
-        flex: 0.88 1 auto;
+        flex: 0.7 1 0;
       }
 
       &.banner {
@@ -47,7 +54,31 @@ const Styled = styled.div`
         box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.11);
         padding: 20px 50px;
 
+        .bannerInfo {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .icon {
+          @media screen and (max-width: 800px) {
+            display: none;
+          }
+        }
+
+        .text {
+          max-width: 400px;
+          font-size: 18px;
+          margin-bottom: 70px;
+          @media screen and (max-width: 800px) {
+            margin-bottom: 30px;
+          }
+        }
+
         .link {
+          display: block;
+          cursor: pointer;
+          background: none;
+          border: none;
           color: #003ae5;
           font-size: 18px;
         }

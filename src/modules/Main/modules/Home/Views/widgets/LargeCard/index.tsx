@@ -1,17 +1,23 @@
 import Styled from "./styled";
 import Button from "@/UI/Button";
+import { route } from "preact-router";
 
 const LargeCard = (): JSX.Element => {
   return (
     <Styled>
       <div className="title">
-        Получайте льготы на вашу дебетовую карту.{" "}
-        <span>Узнайте о новом способе</span>
+        Получайте льготы без лишних бумаг и очередей{" "}
+        <span>с бонусами от банка</span>
       </div>
-      <Button variant="blue" className="firstButton">
+      <Button
+        variant="blue"
+        callback={(): void => {
+          route("/social", true);
+        }}
+        className="firstButton"
+      >
         Оформить
       </Button>
-      <Button>Подробнее</Button>
     </Styled>
   );
 };

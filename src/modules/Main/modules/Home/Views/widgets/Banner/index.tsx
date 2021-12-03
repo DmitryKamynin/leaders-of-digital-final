@@ -6,11 +6,13 @@ const Banner = ({
   title,
   subtitle,
   small,
+  buttonOnClick,
 }: {
   title: string;
   subtitle: string;
   img: string;
   small?: boolean;
+  buttonOnClick?: () => void;
 }): JSX.Element => {
   return (
     <Styled small={small}>
@@ -19,7 +21,13 @@ const Banner = ({
         <div className="subtitle">{subtitle}</div>
       </div>
       <div className="btnContainer">
-        <Button>Подробнее</Button>
+        <Button
+          callback={(): void => {
+            if (buttonOnClick) buttonOnClick();
+          }}
+        >
+          Подробнее
+        </Button>
       </div>
       <div className="icon">
         <img src={img} alt="" />

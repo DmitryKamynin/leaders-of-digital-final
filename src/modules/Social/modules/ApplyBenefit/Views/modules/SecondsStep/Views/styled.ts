@@ -40,7 +40,7 @@ const Styled = styled.div`
       }
     }
     .btnWrapper {
-      padding: 0 180px;
+      padding: 0 120px;
 
       button {
         padding: 14px 26px;

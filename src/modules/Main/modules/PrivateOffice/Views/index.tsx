@@ -1,13 +1,15 @@
-import { Link } from "preact-router/match";
+import { route } from "preact-router";
 
 import Styled from "./styled";
 
-import Header from "./widgets/Header";
+import Header from "@/UI/Header";
 import Container from "./widgets/Container";
 import CardsList from "./widgets/CardsList";
 import Accounts from "./widgets/Accounts";
 import OpenNewProductBtn from "./widgets/OpenNewProductBtn";
 import Promo from "./widgets/Promo";
+
+import Card from "./Assets/card.jpg";
 
 const PrivateOffice = (): JSX.Element => {
   return (
@@ -47,9 +49,25 @@ const PrivateOffice = (): JSX.Element => {
 
         <div className="container rightContainer">
           <div className="container banner">
-            <Link className="link" href="/">
-              Хочу оформить! &#8594;
-            </Link>
+            <div className="bannerInfo">
+              <div className="text">
+                Уважаемая Ирина Федоровна, Вам полагается новая льгота от
+                сервиса &quot;Социальное казначейство&quot;. Нажмите по ссылке
+                для подробной информации
+              </div>
+              <div className="icon">
+                <img src={Card} alt="" />
+              </div>
+            </div>
+            <button
+              type="button"
+              className="link"
+              onClick={(): void => {
+                route("/social/private/start", true);
+              }}
+            >
+              Оформить льготу! &#8594;
+            </button>
           </div>
           <Promo promoTitle="ВТБ Арена" />
           <Promo promoTitle="Продукты" />

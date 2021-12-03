@@ -1,16 +1,22 @@
 import styled from "styled-components";
 
-const Styled = styled.div<{ needBackground?: boolean }>`
+const Styled = styled.div`
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 20px 120px;
   border-bottom: 1px solid #c1c2c3;
-  background: ${({ needBackground }): string =>
-    needBackground ? "#f1f2f4" : "transparent"};
+  z-index: 10;
+  background: #f1f2f4;
+  @media screen and (max-width: 800px) {
+    padding: 20px 8px;
+  }
   & .container {
     display: flex;
-
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
     button {
       cursor: pointer;
       margin: 0 25px;

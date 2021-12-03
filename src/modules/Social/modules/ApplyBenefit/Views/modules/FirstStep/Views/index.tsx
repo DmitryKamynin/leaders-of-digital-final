@@ -2,7 +2,7 @@ import { route } from "preact-router";
 
 import Styled from "./styled";
 
-import Header from "../../widgets/Header";
+import Header from "@/UI/Header";
 import Button from "@/UI/Button";
 
 const PrivateOffice = (): JSX.Element => {
@@ -25,7 +25,7 @@ const PrivateOffice = (): JSX.Element => {
         <Button
           variant="blue"
           callback={(): void => {
-            route("/social/private/end");
+            route("/social/private/end", true);
           }}
         >
           Получить льготу

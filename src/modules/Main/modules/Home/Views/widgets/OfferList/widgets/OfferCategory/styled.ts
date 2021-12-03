@@ -16,6 +16,11 @@ const Styled = styled.li<{ selected?: boolean }>`
     color: ${({ selected }): string =>
       selected ? "rgb(0, 132, 255)" : "#99a1b4"};
   }
+  @media screen and (max-width: 800px) {
+    flex: 1 0.9 auto;
+    white-space: nowrap;
+    margin-right: 20px;
+  }
 `;
 
 export default Styled;

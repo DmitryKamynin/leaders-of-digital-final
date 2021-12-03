@@ -13,6 +13,9 @@ export const StyledStartContainer = styled.div`
     justify-content: flex-start;
     padding-bottom: 5px;
   }
+  @media screen and (max-width: 800px) {
+    background-position: center;
+  }
 `;
 
 const Styled = styled.div`
@@ -36,11 +39,18 @@ const Styled = styled.div`
 
     .content {
       display: flex;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
 
       .bannerContainer {
         display: flex;
         flex-wrap: wrap;
         margin-left: 70px;
+
+        @media screen and (max-width: 800px) {
+          margin-left: 8px;
+        }
       }
     }
   }
