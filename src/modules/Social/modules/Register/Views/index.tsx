@@ -13,6 +13,30 @@ const SocialRouter = (): JSX.Element => (
         import("./modules/Landing/Views").then((mod) => mod.default)
       }
     />
+    <AsyncRoute
+      path="/social/information"
+      getComponent={(): AsyncImport =>
+        import("./modules/PersonalData/Views").then((mod) => mod.default)
+      }
+    />
+    <AsyncRoute
+      path="/social/personal"
+      getComponent={(): AsyncImport =>
+        import("./modules/Information/Views").then((mod) => mod.default)
+      }
+    />
+    <AsyncRoute
+      path="/social/gosuslugi"
+      getComponent={(): AsyncImport =>
+        import("./modules/Gosuslugi/Views").then((mod) => mod.default)
+      }
+    />
+    <AsyncRoute
+      path="/social/thanks"
+      getComponent={(): AsyncImport =>
+        import("./modules/ThanksPage/Views").then((mod) => mod.default)
+      }
+    />
   </Router>
 );
 

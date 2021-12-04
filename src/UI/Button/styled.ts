@@ -17,7 +17,8 @@ const StyledButton = styled.button<{ variant?: "blue" }>`
 
   :hover {
     color: #ffffff;
-    background: linear-gradient(90deg, #0033d9 0%, #006cd2 75%);
+    background: ${({ disabled }): string =>
+      disabled ? "#868686" : "linear-gradient(90deg, #0033d9 0%, #006cd2 75%)"};
   }
 
   @media screen and (max-width: 800px) {

@@ -14,7 +14,7 @@ const SocialRouter = (): JSX.Element => (
       }
     />
     <AsyncRoute
-      path="/social/"
+      path="/social/:rest*"
       getComponent={(): AsyncImport =>
         import("../modules/Register/Views").then((mod) => mod.default)
       }
