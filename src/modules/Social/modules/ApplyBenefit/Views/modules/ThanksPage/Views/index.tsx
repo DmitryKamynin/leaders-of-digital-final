@@ -17,7 +17,7 @@ const PrivateOffice = (): JSX.Element => {
         <Button
           className="margin"
           callback={(): void => {
-            route("/", true);
+            route("/");
           }}
         >
           Главная

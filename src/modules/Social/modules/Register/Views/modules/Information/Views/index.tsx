@@ -34,7 +34,7 @@ const Information = (): JSX.Element => {
         </ul>
         <Button
           callback={(): void => {
-            route("/social/personal", true);
+            route("/social/personal");
           }}
           variant="blue"
         >

@@ -3,9 +3,10 @@
 import { h } from "preact";
 import Router from "preact-router";
 import AsyncRoute from "preact-async-route";
+import { createHashHistory } from "history";
 
 const FirstScenarioRouter = (): JSX.Element => (
-  <Router>
+  <Router history={createHashHistory()}>
     <AsyncRoute
       path="/mobile"
       getComponent={(): AsyncImport =>

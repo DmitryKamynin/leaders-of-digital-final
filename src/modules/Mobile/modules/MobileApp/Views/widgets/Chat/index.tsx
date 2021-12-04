@@ -54,7 +54,7 @@ const Chat = observer((): JSX.Element => {
                         type="button"
                         onClick={(): void => {
                           Store.resetDefault();
-                          route(link, true);
+                          route(link);
                         }}
                       >
                         {linkText}

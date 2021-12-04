@@ -39,7 +39,7 @@ const Information = (): JSX.Element => {
             !!ref1.current?.value?.length && !!ref2.current?.value?.length
           }
           callback={(): void => {
-            route("/social/thanks", true);
+            route("/social/thanks");
           }}
           variant="blue"
         >

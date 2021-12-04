@@ -12,7 +12,7 @@ const LargeCard = (): JSX.Element => {
       <Button
         variant="blue"
         callback={(): void => {
-          route("/social", true);
+          route("/social");
         }}
         className="firstButton"
       >

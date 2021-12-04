@@ -14,7 +14,7 @@ const Home = observer(
             type="button"
             onClick={(): void => {
               RootStore.setAuth();
-              route("/mobile", true);
+              route("/mobile");
             }}
             className="scenarioCard"
           >
@@ -24,7 +24,7 @@ const Home = observer(
             type="button"
             className="scenarioCard"
             onClick={(): void => {
-              route("/main", true);
+              route("/main");
             }}
           >
             Клиент ВТБ Desktop
@@ -33,7 +33,7 @@ const Home = observer(
             type="button"
             className="scenarioCard"
             onClick={(): void => {
-              route("/social", true);
+              route("/social");
             }}
           >
             Для новых клиентов

@@ -6,7 +6,7 @@ import AsyncRoute from "preact-async-route";
 import { createHashHistory } from "history";
 
 const SocialRouter = (): JSX.Element => (
-  <Router>
+  <Router history={createHashHistory()}>
     <AsyncRoute
       path="/social"
       getComponent={(): AsyncImport =>

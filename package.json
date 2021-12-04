@@ -9,7 +9,7 @@
     "start": "node ./server/index.js"
   },
   "dependencies": {
-    "history": "^5.1.0",
+    "history": "^5.0.0",
     "mobx": "^6.3.7",
     "mobx-devtools-mst": "^0.9.30",
     "mobx-logger": "^0.7.1",

@@ -23,7 +23,7 @@ const PromoLending = (): JSX.Element => (
       </div>
       <Button
         callback={(): void => {
-          route("/social/information", true);
+          route("/social/information");
         }}
       >
         Регистрация
@@ -85,7 +85,7 @@ const PromoLending = (): JSX.Element => (
         </ul>
         <Button
           callback={(): void => {
-            route("/social/information", true);
+            route("/social/information");
           }}
         >
           Регистрация

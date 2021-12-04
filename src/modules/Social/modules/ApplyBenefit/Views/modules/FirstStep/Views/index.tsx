@@ -25,7 +25,7 @@ const PrivateOffice = (): JSX.Element => {
         <Button
           variant="blue"
           callback={(): void => {
-            route("/social/private/end", true);
+            route("/social/private/end");
           }}
         >
           Получить льготу

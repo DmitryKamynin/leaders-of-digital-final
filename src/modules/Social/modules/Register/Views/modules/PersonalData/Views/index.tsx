@@ -128,7 +128,7 @@ const Information = (): JSX.Element => {
         <Button
           disabled={checkboxes.includes(false) || checkboxes.includes("await")}
           callback={(): void => {
-            route("/social/gosuslugi", true);
+            route("/social/gosuslugi");
           }}
           variant="blue"
         >

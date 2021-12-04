@@ -63,7 +63,7 @@ const PrivateOffice = (): JSX.Element => {
               type="button"
               className="link"
               onClick={(): void => {
-                route("/social/private/start", true);
+                route("/social/private/start");
               }}
             >
               Оформить льготу! &#8594;

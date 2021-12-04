@@ -40,7 +40,7 @@ const PrivateOffice = (): JSX.Element => {
           <Button
             disabled={!checked}
             callback={(): void => {
-              route("/social/private/thanks", true);
+              route("/social/private/thanks");
             }}
             variant="blue"
           >
