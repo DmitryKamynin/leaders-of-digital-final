@@ -16,13 +16,13 @@ const SocialRouter = (): JSX.Element => (
     <AsyncRoute
       path="/social/information"
       getComponent={(): AsyncImport =>
-        import("./modules/PersonalData/Views").then((mod) => mod.default)
+        import("./modules/Information/Views").then((mod) => mod.default)
       }
     />
     <AsyncRoute
       path="/social/personal"
       getComponent={(): AsyncImport =>
-        import("./modules/Information/Views").then((mod) => mod.default)
+        import("./modules/PersonalData/Views").then((mod) => mod.default)
       }
     />
     <AsyncRoute

@@ -29,6 +29,14 @@ const Styled = styled.div`
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 30px 0 rgba(115, 115, 115, 0.3);
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    top: 90px;
+    margin: 0 8px;
+    bottom: unset;
+    left: unset;
+  }
 `;
 
 export default Styled;

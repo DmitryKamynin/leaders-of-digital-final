@@ -3,7 +3,8 @@ import styled from "styled-components";
 const Styled = styled.label<{ state: boolean | "await" }>`
   margin: 4px;
   cursor: pointer !important;
-  width: 18px;
+  max-width: 18px;
+  width: 100%;
   height: 18px;
   transition: 0.25s;
   border: 2px solid

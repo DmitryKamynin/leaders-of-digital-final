@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 const Styled = styled.div`
   padding: 93px 120px;
-
+  @media screen and (max-width: 800px) {
+    padding: 40px 8px;
+  }
   .title {
     color: #012883;
     font-weight: bold;
@@ -10,10 +12,19 @@ const Styled = styled.div`
     line-height: 42px;
     text-transform: uppercase;
     margin-bottom: 81px;
+
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
   }
 
   .inputs {
     margin: 50px 0;
+    @media screen and (max-width: 800px) {
+      margin: 25px 0;
+    }
     .inputWrapper {
       margin-bottom: 20px;
       input {
