@@ -23,6 +23,9 @@ const MobileApp = observer((): JSX.Element => {
     setTimeout(() => {
       Store.getMessage();
     }, 3000);
+    return (): void => {
+      Store.resetDefault();
+    };
   }, []);
   return (
     <Styled chatOpen={Store.chatOpen}>
